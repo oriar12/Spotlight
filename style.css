@@ -1,0 +1,524 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #2c2c2c;
+
+    /*font-family: 'Roboto Slab', serif; para los artículos*/
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+/** nav **/
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 10px;
+    height: 120px;
+    background-color: #e7ebec;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+ a {
+    text-decoration: none;
+}
+
+/*header logo*/
+
+.header__name{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fed57b;
+    position: relative;
+}
+
+
+.header__logo{
+    font-size: 35px;
+    color: #371b96;
+    font-weight: 700;
+}
+
+/*header list */
+.list {
+    text-align: left;
+}
+
+.list lu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list li {
+    display: inline-block;
+    padding: 0px 40px;
+}
+
+.list a {
+    line-height: 30px;
+    font-weight: 500;
+    transition: .8s;
+}
+
+.list a:hover{
+    color: #db4084;
+}
+
+.category {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.category::after {
+    border-bottom: 1px solid #2c2c2c;
+    content: "";
+    display: block;
+    height: 1px;
+    width: 30px;
+    padding-bottom: 5px;
+}
+
+/*header icon*/
+.header__icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header__icon i {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.header__icon i:hover {
+    color: #db4084;
+    transform: scale(1.2);
+}
+
+/** end nav **/
+
+/** principal img - grid **/
+
+.container__item{
+    display: grid;
+    grid-gap: 2px;
+    grid-auto-rows: minmax(300px, auto);
+    height: 906px;
+    margin: 0 auto;
+    grid-template-areas:
+    "img-1 img-1 img-1 img-2"
+    "img-3 img-3 img-4 img-4";
+    max-width: 1440px;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.item {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.img-1,
+.img-2 {
+    object-fit: cover;
+}
+
+.img-1{
+    grid-area: img-1;
+    
+}
+
+.img-2{
+    grid-area: img-2;
+    justify-content: flex-start !important;
+}
+
+.img-3 {
+    grid-area: img-3;
+}
+
+.img-4 {
+    grid-area: img-4;
+}
+
+/* texto sobre img - zelda y cyberpunk */
+
+.img__item{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.category__img {
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    padding: 5px 10px;
+    right: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+    background-color: #db4084;
+    font-weight: 500;
+}
+
+.content__item {
+    position: absolute;
+    padding: 20px;
+    max-width: 50%;
+}
+
+.inside__img-1 {
+    font-size: 65px;
+    line-height: 1.4;
+    color: #002b48;
+    font-weight: 700;
+}
+
+
+.inside__img-2 {
+    font-size: 40px;
+    color: #FFF;
+    font-weight: 700;
+    -webkit-text-stroke: .1px #371b96;
+    font-style: italic;
+}
+
+/* texto sobre img - the last of us */
+.item_2 {
+    left: 0;
+    right: inherit;
+}
+
+.inside_items-juntos {
+    font-size: 45px;
+    line-height: 1.4;
+    color: #fff;
+    font-weight: 700;
+}
+
+.inside__img-3 {
+    text-align: left;
+}
+
+.derecha_item-4 {
+    display: block;
+    right: 0 !important;
+    text-align: right;
+    max-width: 60%;
+}
+
+/** article content **/
+
+
+.grid__front-page {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1180px;
+    padding: 170px 30px 0;
+    margin: 0 auto;
+}
+
+.pagination__content{
+    flex: 0 0 774px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.front-page__left{
+    border-bottom: 1px solid #9b9b9b;
+    display: flex;
+    padding: 26px 0;
+}
+
+.entry__img{
+    display: block;
+    flex: 0 0 240px;
+    margin-right: 22px;
+    width: 240px;
+    height: 240px;
+}
+
+.entry__container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.entry__number {
+    background-color: #db4084;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    height: 28px;
+    line-height: 28px;
+    min-width: 15px;
+    padding: 0 7px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+}
+
+.entry__subtitle {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 19px;
+    margin: 8px 40px 10px 0;
+}
+
+.entry__title {
+    font-size: 20px;
+    line-height: 28.6px;
+    width: 90%;
+    font-weight: 700;
+}
+
+.entry__info {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 80%;
+    font-weight: 300;
+}
+
+.entry__footer{
+    color: #9b9b9b;
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+/** aside **/
+.front-page__right {
+    flex: 0 0 346px;
+    padding-bottom: 60px;
+    margin-left: auto;
+    
+}
+
+.podcast {
+    margin-bottom: 200px;
+}
+
+.mini-entry {
+    margin: 26px 0;
+    position: relative;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 77.5%;
+    width: 100%;
+    bottom: auto;
+    top: 0;
+}
+
+.mini-entry img {
+    object-fit: cover;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+}
+
+.mini-entry__text {
+    position: absolute;
+    padding: 20px;
+    bottom: auto;
+    z-index: 2;
+}
+
+.mini-entry__text a {
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.front-page__block  h3 {
+    border-top: 1px solid #9b9b9b;
+    color: #db4084;
+    content: "";
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 16px 0;
+}
+
+.mini-entry__more-link {
+    color: #db4084;
+    display: block;
+    text-align: right;
+    font-size: 13px;
+}
+
+.text-aside {
+    bottom: 0;
+    padding: 30px;
+    position: absolute;
+}
+
+.text-aside h3{
+    border-top: none;
+    color: #fff;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 13px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.text-aside h2 {
+    font-size: 24px;
+    line-height: 26.4px;
+    margin: 0;
+    font-weight: 500;
+    color: #fff;
+    -webkit-text-stroke: .2px #2c2c2c;
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 2px;
+}
+
+/** monografico **/
+
+.inner {
+    display: block;
+    padding: 50px 60px;
+}
+
+.img__monografico{
+    height: 65%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.img__monografico img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.inside__monografico {
+    margin: 0;
+    max-width: 1440px;
+    position: relative;
+}
+
+.content-right {
+    margin-left: auto;
+    max-width: 50%;
+    margin-top: 60px;
+    color: #fff;
+}
+
+.subtitle{
+    color: #d498d4;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.title {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.info{
+    line-height: 26.4px;
+    color: #fff;
+}
+
+.arts {
+    display: flex;
+    margin-top: 90px;
+}
+
+.arts .art {
+    border-right: 1px solid #9b9b9b;
+    border-top: 1px solid #9b9b9b;
+    flex: 1;
+}
+
+.art-border{
+    border-right: none !important;
+}
+
+.art > a {
+    box-sizing: border-box;
+    display: block;
+    height: 100%;
+    padding: 10px;
+}
+
+.sb{
+    color: #db4084 !important;
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.tt{
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+.icon-arts {
+    color: #fff;
+    font-size: 30px !important;
+    font-weight: 200 !important;
+}
+
+/** articles second page**/
+
+.grid__front-page-2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1180px;
+    padding: 70px 30px 0;
+    margin: 0 auto;
+}
+
+.pagination__content-2{
+    flex: 0 0 774px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/** see more **/
+
+.site__more-link {
+    background-color: #e7ebec;
+    margin-top: 90px;
+}
+
+.site__more-link > .more-link {
+    cursor: pointer;
+    padding: 60px 60px;
+    text-align: left;
+}
+
+.more-link > span {
+    color: #db4084;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 400;
+}
