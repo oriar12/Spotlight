@@ -31,18 +31,22 @@ body {
 /*header logo*/
 
 .header__name{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    background-color: #fed57b;
+    outline: 10px inset #db4084;
     position: relative;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+
 }
 
 
 .header__logo{
-    font-size: 35px;
-    color: #371b96;
+    font-size: 40px;
+    color: #2c2c2c;
     font-weight: 700;
+    font-style: italic;
 }
 
 /*header list */
