@@ -224,7 +224,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 1180px;
-    padding: 170px 30px 0;
+    padding: 80px 30px 0;
     margin: 0 auto;
 }
 
@@ -392,16 +392,14 @@ body {
 
 /** monografico **/
 
-.container__mono {
-    padding-left: 9.5px;
-    padding-right: 9.5px;
+.container-mono {
     margin-left: calc(590px - 50vw);
     margin-right: calc(184px - 50vw);
     max-width: 1440px;
-    width: 100vw;
+    width: 98vw;
     position: relative;
     overflow: hidden;
-    margin: 70px -30px;
+    margin-bottom: 30px;
 }
 
 .inner {
@@ -410,7 +408,7 @@ body {
 }
 
 .img__monografico{
-    height: 70%;
+    height: 100%;
     left: 0;
     position: absolute;
     width: 100%;
@@ -614,8 +612,13 @@ opacity: 0;
 transition: all .4s ease-in-out;
 }
 
-.show__op {
+.ran__item-img:hover{
     opacity: .3;
+} 
+
+.show__op {
+opacity: .3;
+
 }
 
 .ran__item-img img {

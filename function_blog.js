@@ -505,31 +505,15 @@ window.addEventListener('DOMContentLoaded', function(){
     });
     displayContent = displayContent.join('');
     contentRanking.innerHTML = displayContent;
-});
 
+const itemRan = document.querySelectorAll('.ran__item-img');
 
-//cambio de color y opacidad del fondo del ranking, se podría hacer con
-//un add.classList
-
-//const allContent = document.querySelectorAll('.ranking__tabs')
-
-const contentItemRan = document.querySelectorAll('.ran__item');
-
-
-contentItemRan.forEach(function(e) {
-    contentItemRan.addEventListener('mouseover', function() {
-        const numColor = document.querySelector('.ran__item-num');
-        const imgOp = document.querySelector('.ran__item-img');
-    
-        numColor.classList.add('show__color-num');
-        imgOp.classList.add('show__op'); 
+for (var i = 0; i < itemRan.length; i++) {
+    itemRan[i].addEventListener('mouseover', function() {
+        this.classList.add('show__op');
     });
-
-    contentItemRan.addEventListener('mouseout', function() {
-            const numColor = document.querySelector('.ran__item-num');
-            const imgOp = document.querySelector('.ran__item-img');
-        
-            numColor.classList.remove('show__color-num');
-            imgOp.classList.remove('show__op');
-        });
-})
+    itemRan[i].addEventListener('mouseout', function() {
+        this.classList.remove('show__op')
+    });
+};
+});
