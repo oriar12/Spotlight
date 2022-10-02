@@ -239,6 +239,7 @@ body {
     padding: 26px 0;
 }
 
+
 .entry__img{
     display: block;
     flex: 0 0 240px;
@@ -396,7 +397,7 @@ body {
     margin-left: calc(590px - 50vw);
     margin-right: calc(184px - 50vw);
     max-width: 1440px;
-    width: 98vw;
+    width: 99.3vw;
     position: relative;
     overflow: hidden;
     margin-bottom: 30px;
@@ -549,9 +550,6 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-.show{
-    display: flex;
-}
 
 /** ranking **/
 
@@ -601,6 +599,16 @@ body {
     overflow: hidden; 
 }
 
+.ran__item:hover > .ran__item-img {
+opacity: .3;
+}
+
+.ran__item:hover > .ran__item-num {
+    background-color: #db4084;
+    color: #fff;
+    border: none;
+}
+
 .ran__item-img {
 position: absolute;
 left: -6%;
@@ -612,14 +620,6 @@ opacity: 0;
 transition: all .4s ease-in-out;
 }
 
-.ran__item-img:hover{
-    opacity: .3;
-} 
-
-.show__op {
-opacity: .3;
-
-}
 
 .ran__item-img img {
 object-fit: cover;
@@ -641,13 +641,8 @@ width: 100%;
     text-align: center;
     line-height: 74px;
     font-size: 24px;
-    transition: .4s ease-in-out;
-}
-
-.show__color-num {
-    background-color: #db4084;
-    color: #fff;
-    border: none;
+    transition: all .4s ease-in-out;
+    margin-left: 5px;
 }
 
 

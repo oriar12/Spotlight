@@ -378,6 +378,8 @@ window.addEventListener('DOMContentLoaded', function(){
     paginationContent.innerHTML = displayContent;
 });
 
+// show more btn //
+
 
 /* upcoming realeases*/
 
@@ -506,7 +508,8 @@ window.addEventListener('DOMContentLoaded', function(){
     displayContent = displayContent.join('');
     contentRanking.innerHTML = displayContent;
 
-const itemRan = document.querySelectorAll('.ran__item-img');
+/*const itemRan = document.querySelectorAll('.ran__item-img');
+const itemNum = document.querySelectorAll('.ran__item-num');
 
 for (var i = 0; i < itemRan.length; i++) {
     itemRan[i].addEventListener('mouseover', function() {
@@ -515,5 +518,5 @@ for (var i = 0; i < itemRan.length; i++) {
     itemRan[i].addEventListener('mouseout', function() {
         this.classList.remove('show__op')
     });
-};
+};*/
 });
