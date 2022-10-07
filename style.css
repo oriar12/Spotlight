@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     color: #2c2c2c;
-
+    scroll-behavior: smooth;
     /*font-family: 'Roboto Slab', serif; para los artículos*/
 }
 
@@ -33,7 +33,6 @@ body {
 .header__name {
     width: 250px;
     height: 50px;
-
 }
 
 .header__logo {
