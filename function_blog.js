@@ -520,3 +520,14 @@ for (var i = 0; i < itemRan.length; i++) {
     });
 };*/
 });
+
+/* back to top */
+
+const btn = document.querySelector('.footer__back-to-top');
+
+btn.addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+})
